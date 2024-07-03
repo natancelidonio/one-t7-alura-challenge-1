@@ -1,0 +1,148 @@
+:root {
+    --cor-fundo: #F3F5FC;
+    --cor-destaque: #0A3871;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: var(--cor-fundo);
+    color: var(--cor-destaque);
+}
+
+.cabecalho {
+    display: flex;
+    margin: 2% 0% 1% 11%;
+
+}
+
+.main {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2%;
+}
+
+.main__entrada-dados {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+label {
+    font-size: 1.2rem;
+}
+
+.main__entrada-dados__texto-entrada {
+    display: flex;
+    flex-direction: column;
+}
+
+.main__entrada-dados__texto-entrada p {
+    font-size: 1.1rem;
+    padding-top: 1%;
+}
+#texto-entrada {
+    width: 100%;
+    height: 5rem;
+    text-transform: lowercase;
+    background-color: transparent;
+    border: none;
+}
+
+.main__entrada-dados__texto-entrada__alerta {
+    display: flex;
+    align-items: center;
+}
+
+.main__entrada-dados__botoes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    margin: 2rem;
+
+}
+
+.main__entrada-dados__botoes__criptografar {
+    background-color: var(--cor-destaque);
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    padding: 1rem 5rem;    
+}
+
+.main__entrada-dados__botoes__criptografar:hover {
+    background-color: #0c42b6;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.main__entrada-dados__botoes__descriptografar {
+    background-color: #e9e9e9;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    padding: 1rem 5rem;    
+    
+}
+.main__entrada-dados__botoes__descriptografar:hover {
+    background-color: #ffffff;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#main__resultado {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    padding-right: 3rem;
+}
+
+#titulo-resultado {
+    font-size: 1.8rem;
+}
+
+#imagem-sem-texto {
+    height: auto;
+    display: block;
+}
+
+#main__resultado__texto-saida {
+    height: 5rem;
+    width: auto;
+    display: block;
+    padding-right: 5rem;
+}
+
+.main__resultado__botao-copiar {
+    background-color: var(--cor-destaque);
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    padding: 1rem 5rem;
+}
+
+.main__resultado__botao-copiar:hover {
+    background-color: #0c42b6;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.rodape {
+    text-align: center;
+    padding: 0.5%;
+    font-size: 1.2rem;
+    font-weight: 400;  
+}
+
+.rodape__linkedin-natan:hover, .rodape__linkedin-natan:focus {
+    color: #757FB2;
+}

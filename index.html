@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <h1>Encriptador de mensagens do Challenge #1 - Oracle Next Education T7</h1>
+    </header>
+    <main class="main">
+        <section class="main__entrada-dados">
+            <form class="main__entrada-dados__texto-entrada">
+                <label for="texto-entrada">Digite seu texto:</label><br>
+                <textarea name="texto-entrada" id="texto-entrada" placeholder="Digite aqui..."></textarea>
+                <div class="main__entrada-dados__texto-entrada__alerta">
+                    <ion-icon name="alert-circle-outline"></ion-icon>
+                    <p>ATENÇÃO: Apenas letras minúsculas e sem acento.</p>
+                </div>
+            </form>
+            <div class="main__entrada-dados__botoes">
+                <button onclick="criptografar()" class="main__entrada-dados__botoes__criptografar">Criptografar</button>
+                <button onclick="descriptografar()" class="main__entrada-dados__botoes__descriptografar">Descriptografar</button>
+            </div>
+        </section>
+        <div id="main__resultado">
+            <img id="imagem-sem-texto" src="assets/nenhuma-msg-encontrada.PNG" alt="Nenhuma mensagem encontrada. Aguardando digitação do texto de entrada.">
+        </div>
+    </main>
+    <footer class="rodape">
+        <p>Desenvolvido por <a class="rodape__linkedin-natan" href="https://www.linkedin.com/in/natan-celidonio-fernandes/">Natan Celidonio Fernandes</a> &copy; 2024.</p>
+    </footer>
+    <script src="app.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
